@@ -1,7 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+
 body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color:darksalmon;
+}   
+
+li,ul{
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;    
 }
 
 .hidden{
     display: none;
+}
+
+.clock_section { 
+    background-color: rgba(245, 245, 245, 0.3);
+    margin: 1rem;
+    padding: 8rem;
+}
+
+#clock{
+    font-size: 7rem;
+    font-weight: bolder;
+    order: -2;
+}
+
+#weather{     
+    color: rgb(121, 80, 80);    
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.hidden{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 30rem;
+    height: 3rem;
+    align-self: flex-start;
+    margin-top: 1rem;    
+}
+
+.hello h1{
+    color: white;
+    padding-left: 1rem;
+
+}
+
+#todo-list{
+    background-color: rgba(245, 245, 245, 0.3); 
+}
+
+#todo-list button{
+    border: none;
+    background-color: rgba(245, 245, 245, 0.3);
+    color: white;
+    font-size: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;   
+    border-radius: 20px;        
+}
+
+#todo-list button:hover{
+    cursor: pointer;
+}
+
+#todo-list li{
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;        
+}
+
+.hidden input:first-child {
+    border: white dotted;
+    background-color: rgba(245, 245, 245, 0.3);
+    border-radius: 10px;
+    width: 15rem;
+    height: 2rem;
+    color: rgb(121, 80, 80);
+    font-size: large;       
+}
+
+.hidden input:first-child::placeholder{
+    color: rgb(121, 80, 80);    
+}
+
+#login-btn {
+    border: white dotted;
+    background-color: rgba(245, 245, 245, 0.3);
+    border-radius: 10px;
+    width: 5rem;
+    height: 2rem;
+    color: rgb(121, 80, 80);
+    font-size: large; 
+    margin: 0.1rem 0 0 0.3rem ;     
+}
+
+#login-btn:hover{
+    cursor: pointer;
+}
+
+#todo-form input{
+    background-color: rgba(245, 245, 245, 0.3);
+    width: 15rem;
+    height: 2rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+#todo-form input::placeholder{
+    color: white;
+}
+
+.weather-box{
+    order: -3;
+    align-self: flex-start;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 5rem;  
+}
+#quote{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 0 ;
+}
+
+#quote span{
+    color: white; 
 }
